@@ -1,0 +1,30 @@
+.deck-container {
+  grid-area: decks;
+  display: grid;
+  grid-auto-rows: auto 1fr auto;
+
+  .heading {
+    margin: 0;
+    padding: $top-padding 0 ($top-padding + 2px) 0;
+    text-align: center;
+    background-color: map-get($map: $colors, $key: "scaled-light-wood-base");
+    color: $off-white;
+  }
+
+  .other-info {
+    display: grid;
+    grid-template-areas: "count button";
+    background-color: map-get($map: $colors, $key: "scaled-light-wood-base");
+    padding-top: ($top-padding - 5px);
+    color: $off-white;
+    text-align: center;
+
+    .deck-count {
+      grid-area: count;
+    }
+
+    button{
+      grid-area: button;
+    }
+  }
+}

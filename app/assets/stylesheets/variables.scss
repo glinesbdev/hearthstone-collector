@@ -1,0 +1,9 @@
+$wood-base-color: rgb(79, 27, 23);
+$off-white: #eee;
+
+$colors: (
+  "wood-base": $wood-base-color,
+  "scaled-light-wood-base": scale-color($wood-base-color, $lightness: 8%)
+);
+
+$top-padding: 15px;

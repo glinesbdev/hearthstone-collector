@@ -1,0 +1,28 @@
+// Place all the styles related to the home controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+.book-page {
+  // background-color: rgb(240, 200, 165);
+  grid-area: book;
+  background-color: rgb(250, 230, 175);
+  position: relative;
+  height: 86vh;
+
+  .page-title {
+    text-align: center;
+    margin: 0;
+  }
+
+  .card-container {
+    display: grid;
+    grid-template-areas: "card card card card";
+    text-align: center;
+  }
+  
+  .page-number {
+    position: absolute;
+    right: 50%;
+    bottom: 10px;
+  }
+}

@@ -1,0 +1,25 @@
+.class-icon {
+  height: 42px;
+  border: 5px solid darken(rgb(216, 178, 117), 2%);
+  border-radius: 15% 15% 0 0;
+}
+
+.mana-icon {
+  height: 26px;
+}
+
+.arrow-icon {
+  height: 46px;
+}
+
+.right-arrow-icon {
+  position: absolute;
+  right: 0;
+  top: 50%;
+}
+
+.left-arrow-icon {
+  position: absolute;
+  left: 0;
+  top: 50%;
+}

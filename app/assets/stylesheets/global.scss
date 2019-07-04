@@ -1,0 +1,30 @@
+html, body {
+  padding: 0;
+  margin: 0;
+  font-family: "Alegreya", serif;
+
+  .grid-container {
+    display: grid;
+    grid-template-rows: auto auto 1fr;
+    grid-template-columns: 4fr 1fr;
+    grid-template-areas:
+      "icons decks"
+      "book decks"
+      "filters decks";
+
+    header {
+      display: grid;
+      grid-template-areas: "classIcons miscIcons";
+      grid-template-rows: auto;
+      grid-area: icons;
+      padding-top: $top-padding;
+      background-color: map-get($map: $colors, $key: "wood-base");
+      margin-bottom: -9px;
+    }
+
+    .filters {
+      grid-area: filters;
+      background-color: map-get($map: $colors, $key: "wood-base");
+    }
+  }
+}

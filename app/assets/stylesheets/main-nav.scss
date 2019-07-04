@@ -1,0 +1,11 @@
+.main-nav {
+  .class-icon-container {
+    grid-area: classIcons;
+    display: flex;
+    justify-content: space-evenly;
+  }
+
+  .misc-icons {
+    grid-area: miscIcons;
+  }
+}

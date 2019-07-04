@@ -1,0 +1,12 @@
+%div.book-page
+  %h1.page-title Page Title
+
+  -# = image_tag 'ui_icons/right-arrow.png', class: 'arrow-icon right-arrow-icon'
+  -# = image_tag 'ui_icons/left-arrow.png', class: 'arrow-icon left-arrow-icon'
+
+  %div.card-container
+    - (0...8).each do
+      = render partial: 'partials/card'
+
+  %div.page-number
+    %span Page 1
